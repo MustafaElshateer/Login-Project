@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD</title>
+    <!-- Main Template CSS file -->
+    <link rel="stylesheet" href="css/master.css" />
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;800&display=swapfamily=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-shape">
+      <div class="form-login">
+        <h1>create account</h1>
+        <form id="my-form">
+          <br />
+          <input
+            type="text"
+            placeholder="Name"
+            size="15"
+            id="username"
+            name="username"
+          /><br />
+          <br />
+          <input
+            type="password"
+            placeholder="password"
+            id="password"
+            name="password"
+            required=""
+          /><i
+            class="far fa-eye"
+            id="togglePassword"
+            style="margin-left: -30px; cursor: pointer"
+          ></i
+          ><br /><br /><br />
+          <input
+            class="btn"
+            type="button"
+            value="Add User"
+            onclick="add();"
+          /><br />
+          <br />
+          <!-- <input type="button" value="Show User" onclick="show();" /><br /> -->
+        </form>
+        <!-- <div id="table-for-name" style="color: aliceblue"></div>
+            <div id="table-for-age" style="color: aliceblue"></div> -->
+        <!-- <div class="table" id="box"></div> -->
+        <!-- <input
+            id="searchInput"
+            type="text"
+            placeholder=" Search"
+            name="search"
+            onkeyup="search();"
+          /> -->
+        <!-- <br />
+          <p id="showingNotResult"></p>
+          <br /> -->
+
+        <!-- <form>
+            <input
+              type="button"
+              value="delete user "
+              onclick="deleteItem();"
+            /><br />
+            <p id="delete-item"></p>
+          </form> -->
+      </div>
+    </div>
+    <script src="js/create.js"></script>
+  </body>
+</html>

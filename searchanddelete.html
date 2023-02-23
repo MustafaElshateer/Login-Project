@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD</title>
+    <!-- Main Template CSS file -->
+    <link rel="stylesheet" href="css/second.css" />
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-shape">
+      <div class="flex-forms">
+        <div class="form-update">
+          <form id="my-form">
+            <h1>Update User</h1>
+            <input
+              type="text"
+              class="update-input"
+              placeholder="old-name"
+              size="15"
+              id="old-name"
+              name="old-name"
+            /><br />
+            <br />
+
+            <input
+              type="text"
+              class="update-input"
+              placeholder="new-name"
+              size="15"
+              id="new-name"
+              name="new-name"
+            /><br />
+            <br />
+
+            <input
+              type="button"
+              class="btn"
+              value="Update"
+              onclick="update();"
+            />
+            <br />
+            <br />
+          </form>
+        </div>
+        <div class="form-delete">
+          <div class="table" id="box"></div>
+          <form id="my-form">
+            <input
+              type="button"
+              class="btn"
+              value="Show User"
+              onclick="showUI();"
+            /><br />
+            <br />
+            <input
+              id="searchInput"
+              type="text"
+              placeholder=" Search"
+              name="search"
+              onkeyup="searchforelement();"
+            />
+            <br />
+            <p id="showingNotResult"></p>
+            <br />
+          </form>
+          <form id="my-form">
+            <input
+              type="button"
+              class="btn"
+              value="delete-user"
+              onclick="deleteClick();"
+            /><br />
+            <br />
+
+            <p id="delete-item"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- <form id="my-form">
+            <label for="username">اسم المستخدم</label>
+            <br />
+            <input type="text" size="15" id="username" name="username" /><br />
+            <label for="Age">العمر</label>
+            <br />
+            <input
+              type="number"
+              size="2"
+              id="age"
+              name="age"
+            /><br /><br /><br />
+            <input
+              type="button"
+              value="delete user "
+              onclick="deleteItem();"
+            /><br />
+            <p id="delete-item"></p>
+
+            <input type="button" value="Add User" onclick="add();" /><br /> -->
+    <!-- <br />
+            <input type="button" value="Show User" onclick="show();" /><br />
+          </form> -->
+    <!-- <div id="table-for-name" style="color: aliceblue"></div>
+            <div id="table-for-age" style="color: aliceblue"></div> -->
+    <script src="js/second.js"></script>
+  </body>
+</html>
